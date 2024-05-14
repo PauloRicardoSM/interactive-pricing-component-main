@@ -12,7 +12,7 @@ body {
   padding: 15% 5% 0%;
   background-image: url("../images/bg-pattern.svg");
   background-repeat: no-repeat;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 header {
@@ -40,13 +40,23 @@ header p {
   max-width: 800px;
   padding: 10% 3%;
   background-color: white;
-  box-shadow: 2px 2px 5px hsl(225, 20%, 60%);
+  box-shadow: 2px 2px 10px hsl(225, 20%, 60%);
   border-radius: 10px;
 }
+.card p {
+  font-size: 0.8em;
+}
+.card-pageviews h3 {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
 .card-pageviews-slider {
+  margin: 8% 0;
   -webkit-appearance: none;
   appearance: none;
   width: 100%;
+  height: 0.5rem;
   border-radius: 20px;
   background: linear-gradient(to right, hsl(174, 77%, 80%), 50%, hsl(224, 65%, 95%) 50%);
   outline: none;
@@ -61,9 +71,57 @@ header p {
   background: url("../images/icon-slider.svg") no-repeat center center;
   background-color: hsl(225, 20%, 60%);
   border-radius: 50%;
+  box-shadow: 2px 2px 5px hsl(225, 20%, 60%);
 }
 .card-pageviews-slider:hover {
   opacity: 1;
+}
+.card-pageviews p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8em;
+}
+.card-pageviews p span {
+  font-size: 1.8em;
+  color: hsl(227, 35%, 25%);
+  font-weight: 800;
+  margin-right: 2%;
+}
+.card .card-discount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5% 0;
+}
+.card .card-discount #chk {
+  display: none;
+}
+.card .card-discount #chk:checked ~ .switch {
+  background-color: blueviolet;
+}
+.card .card-discount #chk:checked ~ .switch .slider {
+  transform: translateX(60px);
+}
+.card .card-discount .switch {
+  position: relative;
+  background-color: #777;
+  width: 120px;
+  height: 60px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.card .card-discount .switch .slider {
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  transition: all 0.5s ease-in-out;
 }
 
 .attribution {

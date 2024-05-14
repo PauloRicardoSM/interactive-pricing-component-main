@@ -26,24 +26,26 @@
 
     <main class="card">
       <div class="card-pageviews">
-        <p>100k Pageviews</p>
+        <h3>100k Pageviews</h3>
         <input type="range" id="mySlider" class="card-pageviews-slider" min="0" max="100" value="50">
-        <p>$<span id="money">50</span> /month</p>
+        <p><span id="money">$50.00</span>/month</p>
       </div>
 
       <div class="card-discount">
         <p>Monthly Billing</p>
-        <div class="switch">
-          <input type="checkbox" id="switch" name="switch">
-          <label for="switch"></label>
+        <div class="card-discount-switch-container">
+          <input type="checkbox" id="chk">
+          <label for="chk" class="switch">
+            <span class="slider"></span>
+          </label>
         </div>
-        <p>Yearly Billing <span id="span-discount">25% discount</span></p>
+        <p>Yearly Billing <span id="span-discount">25%</span></p>
       </div>
 
       <div class="card-check">
-        Unlimited websites
-        100% data ownership
-        Email reports
+        <p>Unlimited websites</p>
+        <p>100% data ownership</p>
+        <p>Email reports</p>
       </div>
 
       <button class="card-btn">Start my trial</button>
