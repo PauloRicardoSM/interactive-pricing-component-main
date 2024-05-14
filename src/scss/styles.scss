@@ -13,19 +13,36 @@
 body {
     @include mixins.container;
     background-color: variables.$main-background-color;
+    padding: 15% 5% 0%;
+    background-image: url('../images/bg-pattern.svg');
+    background-repeat: no-repeat;
 }
 
 header {
     @include mixins.flex-center;
     flex-direction: column;
+    margin-bottom: 20%;
+    height: 10em;
+    background-image: url('../images/pattern-circles.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
 
     h2 {
         color: variables.$text-cta-background-color;
+        margin-bottom: 5%;
+    }
+
+    p {
+        width: 60%;
     }
 }
 
 .card {
     background-color: variables.$pricing-component-background-color;
+    box-shadow: 2px 2px 5px variables.$text-color;
+    border-radius: 10px;
 }
 
 .attribution {
