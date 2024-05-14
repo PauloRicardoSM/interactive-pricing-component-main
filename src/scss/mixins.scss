@@ -1,7 +1,7 @@
 @use 'variables';
 
 @mixin container {
-    margin: 0 audto;
+    margin: 0 auto;
     max-width: variables.$container-max-width;
 }
 

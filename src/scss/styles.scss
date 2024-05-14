@@ -11,11 +11,11 @@
 }
 
 body {
-    @include mixins.container;
     background-color: variables.$main-background-color;
     padding: 15% 5% 0%;
     background-image: url('../images/bg-pattern.svg');
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 header {
@@ -40,16 +40,47 @@ header {
 }
 
 .card {
-    background-color: variables.$pricing-component-background-color;
+    @include mixins.container;
+
+    padding: 10% 3%;
+    background-color: white;
     box-shadow: 2px 2px 5px variables.$text-color;
     border-radius: 10px;
+
+    &-pageviews {
+        &-slider {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 100%;
+            
+            background: linear-gradient(to right, variables.$full-sliderbar-color, 50%, variables.$empty-sliderbar-color 50%);
+            outline: none;
+            opacity: 0.7;
+            transition: opacity .2s;
+
+            &::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 2rem;
+                height: 2rem;
+                background: url('../images/icon-slider.svg') no-repeat center center;
+                background-color: variables.$text-color;
+                border-radius: 50%;
+            }
+            
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
 }
 
 .attribution {
     font-size: 11px;
     text-align: center;
-}
+    margin-top: 5%;
 
-.attribution a {
-    color: hsl(228, 45%, 44%);
+    a {
+        color: hsl(228, 45%, 44%);
+    }
 }
