@@ -1,0 +1,38 @@
+* {
+  font-family: "Manrope", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  color: hsl(225, 20%, 60%);
+}
+
+body {
+  padding: 2% 4%;
+  margin: 0 audto;
+  max-width: 800px;
+  background-color: hsl(230, 100%, 99%);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header h2 {
+  color: hsl(227, 35%, 25%);
+}
+
+.card {
+  background-color: hsl 0, 0%, 100%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=styles.css.map */

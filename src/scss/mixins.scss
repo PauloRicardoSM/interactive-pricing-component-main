@@ -1,0 +1,13 @@
+@use 'variables';
+
+@mixin container {
+    padding: 5% 4%;
+    margin: 0 audto;
+    max-width: variables.$container-max-width;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

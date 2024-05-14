@@ -1,0 +1,38 @@
+@use 'variables';
+@use 'mixins';
+
+* {
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    color: variables.$text-color;
+}
+
+body {
+    @include mixins.container;
+    background-color: variables.$main-background-color;
+}
+
+header {
+    @include mixins.flex-center;
+    flex-direction: column;
+
+    h2 {
+        color: variables.$text-cta-background-color;
+    }
+}
+
+.card {
+    background-color: variables.$pricing-component-background-color;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
