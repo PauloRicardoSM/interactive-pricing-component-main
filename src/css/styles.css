@@ -20,7 +20,7 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 20%;
+  margin-bottom: 15%;
   height: 10em;
   background-image: url("../images/pattern-circles.svg");
   background-repeat: no-repeat;
@@ -40,11 +40,8 @@ header p {
   max-width: 800px;
   padding: 10% 3%;
   background-color: white;
-  box-shadow: 2px 2px 10px hsl(225, 20%, 60%);
+  box-shadow: 0px 0px 10px hsl(224, 65%, 95%);
   border-radius: 10px;
-}
-.card p {
-  font-size: 0.8em;
 }
 .card-pageviews h3 {
   font-size: 0.8em;
@@ -93,21 +90,31 @@ header p {
   justify-content: center;
   align-items: center;
   margin: 5% 0;
+  flex: 1;
+}
+.card .card-discount-switch-container {
+  margin: 0 2%;
+}
+.card .card-discount #span-discount {
+  background-color: hsl(14, 92%, 95%);
+  color: red;
+  border-radius: 20px;
+  padding: 0.3em 0.7em;
 }
 .card .card-discount #chk {
   display: none;
 }
 .card .card-discount #chk:checked ~ .switch {
-  background-color: blueviolet;
+  background-color: hsl(225, 20%, 60%);
 }
 .card .card-discount #chk:checked ~ .switch .slider {
-  transform: translateX(60px);
+  transform: translateX(1.4em);
 }
 .card .card-discount .switch {
   position: relative;
-  background-color: #777;
-  width: 120px;
-  height: 60px;
+  background-color: hsl(223, 50%, 87%);
+  width: 3em;
+  height: 1.6em;
   border-radius: 40px;
   display: flex;
   align-items: center;
@@ -119,8 +126,8 @@ header p {
   position: absolute;
   background-color: white;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 1em;
+  height: 1em;
   transition: all 0.5s ease-in-out;
 }
 
