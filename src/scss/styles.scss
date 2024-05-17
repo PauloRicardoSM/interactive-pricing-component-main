@@ -17,6 +17,8 @@ body {
     background-repeat: no-repeat;
     overflow-x: hidden;
 
+    @include mixins.flex-center;
+
     p {
         font-size: 0.8em;
     }
@@ -34,7 +36,18 @@ body {
     }
 
     @include mixins.desktop {
-        padding: 0;
+        padding: 5% 0;
+        overflow: hidden;
+    }
+}
+
+.interface {
+    @include mixins.desktop {
+        width: 40%;
+
+        p {
+            font-size: 1em;
+        }
     }
 }
 
@@ -61,6 +74,10 @@ header {
         @include mixins.large-tablet {
             font-size: 2.3em;
         }
+
+        @include mixins.desktop {
+            font-size: 2em;
+        }
     }
 
     p {
@@ -69,6 +86,14 @@ header {
         @include mixins.large-tablet {
             width: 45%;
         }
+
+        @include mixins.desktop {
+            width: 100%;
+        }
+    }
+
+    @include mixins.desktop {
+        margin-bottom: 7%
     }
 }
 
@@ -127,6 +152,11 @@ header {
             @include mixins.large-tablet {
                 width: 80%;
             }
+
+            @include mixins.desktop {
+                width: 100%;
+                margin: 10% 0;
+            }
         }
 
         p {
@@ -139,6 +169,33 @@ header {
                 color: variables.$text-cta-background-color;
                 font-weight: 800;
                 margin-right: 2%;
+
+                @include mixins.desktop {
+                    font-size: 2em;
+                }
+            }
+        }
+
+        @include mixins.desktop {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+            grid-template-areas: "h3 p" "input input";
+            align-items: center;
+
+            h3 {
+                grid-area: h3;
+                justify-self: start;
+            }
+
+            p {
+                grid-area: p;
+                justify-self: end;
+            }
+
+            &-slider {
+                grid-area: input;
+                justify-self: center;
             }
         }
     }
@@ -192,15 +249,28 @@ header {
                 transition: all .5s ease-in-out;
             }
         }
+
+        @include mixins.desktop {
+            margin-top: 1%;
+        }
     }
 
     hr {
         height: 0.2em;
-        width: 110%;
-        margin-left: -4%;
+        width: 115%;
+        margin-left: -10%;
         margin-top: 10%;
         border: 0;
         background-image: linear-gradient(to right, variables.$main-background-color, variables.$main-background-color, variables.$main-background-color);
+
+        @include mixins.large-tablet {
+            width: 120%;
+        }
+
+        @include mixins.desktop {
+            margin: 5% 0 5% -10%;
+            width: 120%;
+        }
     }
 
     &-check {
@@ -208,10 +278,18 @@ header {
 
         p {
             margin-top: 2%;
+
+            @include mixins.desktop {
+                text-align: left;
+            }
         }
 
         img {
             margin-right: 2%;
+        }
+
+        @include mixins.desktop {
+            margin: 0;
         }
     }
 
@@ -232,7 +310,22 @@ header {
         @include mixins.large-tablet {
             font-size: 1.5em;
         }
+
+        @include mixins.desktop {
+            font-size: 1em;
+            margin: 0;
+            padding: 0;
+        }
     } 
+
+    @include mixins.desktop {
+        padding: 7%;
+
+        #check {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
 }
 
 .attribution {
