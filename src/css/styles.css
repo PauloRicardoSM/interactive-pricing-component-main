@@ -9,10 +9,13 @@
 
 body {
   background-color: hsl(230, 100%, 99%);
-  padding: 15% 5% 0%;
+  padding: 15% 5%;
   background-image: url("../images/bg-pattern.svg");
   background-repeat: no-repeat;
   overflow-x: hidden;
+}
+body p {
+  font-size: 0.8em;
 }
 
 header {
@@ -20,8 +23,8 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 15%;
-  height: 10em;
+  margin-bottom: 10%;
+  height: 9em;
   background-image: url("../images/pattern-circles.svg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -29,10 +32,11 @@ header {
 }
 header h2 {
   color: hsl(227, 35%, 25%);
-  margin-bottom: 5%;
+  margin-bottom: 3%;
+  font-size: 1.3em;
 }
 header p {
-  width: 60%;
+  width: 50%;
 }
 
 .card {
@@ -40,7 +44,6 @@ header p {
   max-width: 800px;
   padding: 10% 3%;
   background-color: white;
-  box-shadow: 0px 0px 10px hsl(224, 65%, 95%);
   border-radius: 10px;
 }
 .card-pageviews h3 {
@@ -59,6 +62,7 @@ header p {
   outline: none;
   opacity: 0.7;
   transition: opacity 0.2s;
+  cursor: pointer;
 }
 .card-pageviews-slider::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -129,6 +133,36 @@ header p {
   width: 1em;
   height: 1em;
   transition: all 0.5s ease-in-out;
+}
+.card hr {
+  height: 0.2em;
+  width: 110%;
+  margin-left: -4%;
+  margin-top: 10%;
+  border: 0;
+  background-image: linear-gradient(to right, hsl(230, 100%, 99%), hsl(230, 100%, 99%), hsl(230, 100%, 99%));
+}
+.card-check {
+  margin-top: 8%;
+}
+.card-check p {
+  margin-top: 2%;
+}
+.card-check img {
+  margin-right: 2%;
+}
+.card-btn {
+  border: none;
+  border-radius: 25px;
+  padding: 4% 15%;
+  margin-top: 8%;
+  font-size: 1em;
+  background-color: hsl(227, 35%, 25%);
+  color: hsl(226, 100%, 87%);
+  cursor: pointer;
+}
+.card-btn:hover {
+  color: white;
 }
 
 .attribution {
