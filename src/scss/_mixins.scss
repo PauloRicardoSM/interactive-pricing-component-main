@@ -18,13 +18,13 @@
 }
 
 @mixin large-tablet {
-    @media(min-width: 669px) and (max-width: 1024px) {
+    @media(min-width: 669px) and (max-width: 1025px) {
         @content;
     }
 }
 
 @mixin desktop {
-    @media(min-width: 102px) {
+    @media(min-width: 1025px) {
         @content;
     }
 }
