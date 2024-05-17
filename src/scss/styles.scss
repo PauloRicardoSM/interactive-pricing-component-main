@@ -20,6 +20,13 @@ body {
     p {
         font-size: 0.8em;
     }
+
+    @include mixins.tablet {
+        p {
+            font-size: 1.2em;
+        }
+    }
+    
 }
 
 header {
@@ -37,6 +44,10 @@ header {
         color: variables.$text-cta-background-color;
         margin-bottom: 3%;
         font-size: 1.3em;
+
+        @include mixins.tablet {
+            font-size: 2em;
+        }
     }
 
     p {
@@ -63,7 +74,7 @@ header {
             margin: 8% 0;
             -webkit-appearance: none;
             appearance: none;
-            width: 100%;
+            width: 90%;
             height: 0.5rem;
             border-radius: 20px;
             background: linear-gradient(to right, variables.$full-sliderbar-color, 50%, variables.$empty-sliderbar-color 50%);
@@ -75,8 +86,8 @@ header {
             &::-webkit-slider-thumb {
                 -webkit-appearance: none;
                 appearance: none;
-                width: 2rem;
-                height: 2rem;
+                width: 2.5rem;
+                height: 2.5rem;
                 background: url('../images/icon-slider.svg') no-repeat center center;
                 background-color: variables.$text-color;
                 border-radius: 50%;
@@ -91,10 +102,10 @@ header {
         p {
             @include mixins.flex-center;
 
-            font-size: 0.8em;
+            font-size: 1em;
 
             span {
-                font-size: 1.8em;
+                font-size: 2.8em;
                 color: variables.$text-cta-background-color;
                 font-weight: 800;
                 margin-right: 2%;
@@ -179,7 +190,7 @@ header {
         border-radius: 25px;
         padding: 4% 15%;
         margin-top: 8%;
-        font-size: 1em;
+        font-size: 1.3em;
         background-color: variables.$text-cta-background-color;
         color: variables.$cta-background-color;
         cursor: pointer;
@@ -191,11 +202,15 @@ header {
 }
 
 .attribution {
-    font-size: 11px;
+    font-size: .8em;
     text-align: center;
     margin-top: 5%;
 
     a {
         color: hsl(228, 45%, 44%);
+    }
+
+    @include mixins.tablet {
+        font-size: .9em;
     }
 }
