@@ -44,45 +44,49 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
+- SCSS preprocessor
 - CSS custom properties
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- JavaScript
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+In this project, I mainly learned how SCSS behaves in relation to CSS and how it can be useful. For example, we can nest tags within tags with more readability than CSS, as in the section below:
 
-To see how you can add code snippets, see below:
+```scss
+.attribution {
+    font-size: .7em;
+    text-align: center;
+    margin-top: 5%;
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
+    a {
+        color: hsl(228, 45%, 44%);
+    }
+
+    @include mixins.tablet {
+        font-size: .9em;
+    }
+
+    @include mixins.large-tablet {
+        font-size: 1em;
+    }
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+We can also create mixins and variables, which makes coding faster and more organized. In addition, I was able to learn more basic and useful JavaScript properties and to work better using CSS Grid and Flexbox.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+For future projects, I intend to work and improve my skills and competencies in:
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+- Flexbox
+- CSS Grid
+- JavaScript
+- SCSS
+  
+I also plan to start studying some JavaScript frameworks like React, in addition to starting with the basics of databases and backend with the Python framework Django.
 
 ### Useful resources
 
