@@ -252,6 +252,12 @@ header {
                 height: 1em;
                 transition: all .5s ease-in-out;
             }
+
+            @include mixins.desktop {
+                &:hover {
+                    background-color: rgb(231, 231, 231);
+                }
+            }
         }
 
         @include mixins.desktop {

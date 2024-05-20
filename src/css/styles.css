@@ -247,6 +247,11 @@ header p {
   transition: all 0.5s ease-in-out;
 }
 @media (min-width: 1025px) {
+  .card .card-discount .switch:hover {
+    background-color: rgb(231, 231, 231);
+  }
+}
+@media (min-width: 1025px) {
   .card .card-discount {
     margin-top: 1%;
   }
