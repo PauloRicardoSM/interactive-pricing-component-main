@@ -90,16 +90,14 @@ I also plan to start studying some JavaScript frameworks like React, in addition
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
-
+- [Link to video](https://youtu.be/ZyFDF_2r-Dk?si=RV0CWXZLlfjy1J3A) - This video helped me build the ‘switch’ button present on the site, the creator explains in a direct and clear way. Watching the video makes it easy to make adaptations to the tool so that it fits your site.
+  
 ## Author
 
 - Frontend Mentor - [@PauloRicardoSM](https://www.frontendmentor.io/profile/PauloRicardoSM)
 - LinkedIn - [Paulo Ricardo Sousa Menezes](https://www.linkedin.com/in/paulo-ricardo-sousa/)
 - Email - pauloricardosm@alu.ufc.br
+- GitHub - [@PauloRicardoSM](https://github.com/PauloRicardoSM)
 
 ## Acknowledgments
 
