@@ -36,17 +36,19 @@ body {
     }
 
     @include mixins.desktop {
-        padding: 5% 0;
-        overflow: hidden;
+        height: 100vh;
     }
 }
 
 .interface {
     @include mixins.desktop {
+        @include mixins.flex-center;
+
+        flex-direction: column;
         width: 40%;
 
         p {
-            font-size: 1em;
+            font-size: 0.8em;
         }
     }
 }
@@ -66,6 +68,7 @@ header {
         color: variables.$text-cta-background-color;
         margin-bottom: 1%;
         font-size: 1.3em;
+        font-weight: 800;
 
         @include mixins.tablet {
             font-size: 2em;
@@ -76,16 +79,12 @@ header {
         }
 
         @include mixins.desktop {
-            font-size: 2em;
+            font-size: 1.5em;
         }
     }
 
     p {
-        width: 50%;
-
-        @include mixins.large-tablet {
-            width: 45%;
-        }
+        width: 55%;
 
         @include mixins.desktop {
             width: 100%;
@@ -93,7 +92,9 @@ header {
     }
 
     @include mixins.desktop {
-        margin-bottom: 7%
+        margin-bottom: 7%;
+        width: 100%;
+        height: 8em;
     }
 }
 
@@ -102,7 +103,6 @@ header {
 
     padding:8% 3%;
     background-color: white;
-    // box-shadow: 0px 0px 10px variables.$empty-sliderbar-color;
     border-radius: 10px;
 
     &-pageviews {
@@ -173,6 +173,10 @@ header {
                 @include mixins.desktop {
                     font-size: 2em;
                 }
+            }
+
+            @include mixins.desktop {
+                min-width: 11em;
             }
         }
 
@@ -268,8 +272,8 @@ header {
         }
 
         @include mixins.desktop {
-            margin: 5% 0 5% -10%;
-            width: 120%;
+            margin: 5% 0 5% -15%;
+            width: 150%;
         }
     }
 
@@ -290,6 +294,10 @@ header {
 
         @include mixins.desktop {
             margin: 0;
+            width: 100%;
+            img {
+                margin-right: 5%;
+            }
         }
     }
 
@@ -312,9 +320,10 @@ header {
         }
 
         @include mixins.desktop {
-            font-size: 1em;
+            font-size: .8em;
+            height: 2.8em;
+            width: 80%;
             margin: 0;
-            padding: 0;
         }
     } 
 
@@ -324,12 +333,13 @@ header {
         #check {
             display: grid;
             grid-template-columns: 1fr 1fr;
+            place-items: center;
         }
     }
 }
 
 .attribution {
-    font-size: .8em;
+    font-size: .7em;
     text-align: center;
     margin-top: 5%;
 
