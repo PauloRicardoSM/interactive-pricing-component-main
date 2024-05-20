@@ -97,11 +97,9 @@ I also plan to start studying some JavaScript frameworks like React, in addition
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Frontend Mentor - [@PauloRicardoSM](https://www.frontendmentor.io/profile/PauloRicardoSM)
+- LinkedIn - [Paulo Ricardo Sousa Menezes](https://www.linkedin.com/in/paulo-ricardo-sousa/)
+- Email - pauloricardosm@alu.ufc.br
 
 ## Acknowledgments
 
