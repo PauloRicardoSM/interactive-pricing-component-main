@@ -1,4 +1,5 @@
-# Frontend Mentor - Interactive pricing component solution
+|![logo-web-dev](https://github.com/PauloRicardoSM/gallery-home-project/assets/135445155/a2887afe-2a07-4347-9da4-943099e04b49)|<h1>Frontend Mentor - Interactive pricing component solution</h1>|
+|:---:|:---:|
 
 This is a solution to the [Interactive pricing component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-pricing-component-t0m8PIyY8). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
